@@ -1,8 +1,8 @@
 import "./App.css";
 import SearchBar from "./Components/SearchBar.js";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
-import relatedWordData from "./Data.json";
-import relatedWords from "./Components/RelatedWords.js";
+import RelatedWords from "./Components/RelatedWords.js";
+import TranslatedWord from "./Components/TranslatedWord.js";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       </header>
       <div>
         <SearchBar placeholder="Enter a word in English" />
+        <TranslatedWord />
       </div>
 
       <div className="Middle Arrow">
@@ -21,8 +22,8 @@ function App() {
 
       <main className="main">
         {/* for word in related words: put a button */}
-        <button data={relatedWordData}>this is a button</button>
-        <relatedWords />
+        <button>this is a button</button>
+        <RelatedWords />
         <button>this is a button </button>
       </main>
     </div>

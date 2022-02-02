@@ -1,15 +1,14 @@
 import React from "react";
 
-// function related_output()=>{
-//   const x=2;
+function RelatedWords() {
+  const RelatedWordData = {
+    Car: ["Ford", "BMW", "Fiat", "Toyota", "Honda"],
+    Couch: ["Chair", "Furniture", "Bed"],
+    Mariama: ["Hana", "Sabrina", "Yasmine"],
+  };
 
-function relatedWords({ data }) {
-  let sentence = "";
-  for (let word in data) {
-    console.log(word);
-    sentence += word;
+  for (let word in RelatedWordData) {
+    return RelatedWordData[word];
   }
-
-  return <div className="dataResult"> {sentence}</div>;
 }
-export default relatedWords;
+export default RelatedWords;
