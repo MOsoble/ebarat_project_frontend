@@ -1,15 +1,31 @@
 
-body {
+.App {
   background-color: #726cf8;
-  background-image: linear-gradient(315deg, #726cf8 0%, #e975a8 74%);;
+  background-image: linear-gradient(315deg, #726cf8 0%, #e975a8 74%); 
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
 
-/* i WANT THIS TO BE MY MAIN BODY WITH RELATED WORDS OUTPUT*/
-.App { 
+.App-header {
+
+  position: absolute;
+  left: 320px;
+  top: 50px;
+  background-color: #dbdfee;
+  width: 750px;
+  min-height: 50px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content:space-evenly;
+}
+
+
+.main { 
   background-color: #dbdfee;
   width: 750px;
   min-height: 300px;
