@@ -6,10 +6,10 @@ function SearchBar({ placeholder, setWord }) {
     <div className="search">
       <div className="searchInputs">
         <input type="text" placeholder={placeholder} />
-        <input type="text" placeholder="mariama" />
+
         <div className="searchIcon">
           <SearchIcon />
-          <button onClick={() => setWord("skyscraper")}>Click me</button>
+          <button onClick={() => setWord("skyscraper")}>Search</button>
         </div>
       </div>
     </div>

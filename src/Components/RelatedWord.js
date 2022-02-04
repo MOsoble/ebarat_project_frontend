@@ -8,7 +8,7 @@ function RelatedWords() {
   };
 
   for (let word in RelatedWordData) {
-    return RelatedWordData[word];
+    return RelatedWordData[word] + " ";
   }
 }
 export default RelatedWords;

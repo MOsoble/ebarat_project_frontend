@@ -6,7 +6,7 @@ import TranslatedWord from "./Components/TranslatedWord.js";
 import { useState } from "react";
 
 function App() {
-  const [searchedWord, setSearchedWord] = useState("house");
+  const [searchedWord, setSearchedWord] = useState("");
   /*   */
   return (
     <div className="container">
@@ -23,16 +23,19 @@ function App() {
           </h5>
         </div>
         <div className="main-main">
-          <ArrowCircleRightIcon />
-          <SearchBar
-            setWord={setSearchedWord}
-            placeholder="Enter a word in English"
-          />
-          <TranslatedWord currentWord={searchedWord} />
-          {/* for word in related words: put a button */}
-          <button>this is a button</button>
-          <RelatedWords />
-          <button>this is a button </button>
+          <div className="search-area">
+            <SearchBar
+              setWord={setSearchedWord}
+              placeholder="Enter a word in English"
+            />
+            <ArrowCircleRightIcon />
+            <TranslatedWord currentWord={searchedWord} />
+          </div>
+          <div className="related-words-area">
+            <h5>Words related to your searched word</h5>
+            {/* for word in related words: put a button */}
+            <RelatedWords />
+          </div>
         </div>
       </main>
       <footer className="footer">this is the footer area</footer>
