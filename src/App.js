@@ -1,6 +1,6 @@
 import "./App.css";
 import SearchBar from "./Components/SearchBar.js";
-import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
+// import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import RelatedWords from "./Components/RelatedWord.js";
 import TranslatedWord from "./Components/TranslatedWord.js";
 import { useState } from "react";
@@ -28,13 +28,13 @@ function App() {
               setWord={setSearchedWord}
               placeholder="Enter a word in English"
             />
-            <ArrowCircleRightIcon />
+            {/* <ArrowCircleRightIcon /> */}
             <TranslatedWord currentWord={searchedWord} />
           </div>
           <div className="related-words-area">
-            <h5>Words related to your searched word</h5>
+            <h5>Words related to {searchedWord}</h5>
             {/* for word in related words: put a button */}
-            <RelatedWords />
+            <RelatedWords currentWord={searchedWord} />
           </div>
         </div>
       </main>

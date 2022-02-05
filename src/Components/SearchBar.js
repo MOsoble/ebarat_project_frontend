@@ -1,5 +1,5 @@
-import React from "react";
-import SearchIcon from "@mui/icons-material/Search";
+// import SearchIcon from "@mui/icons-material/Search";
+import React, { useState, useEffect } from "react";
 
 function SearchBar({ placeholder, setWord }) {
   return (
@@ -7,13 +7,14 @@ function SearchBar({ placeholder, setWord }) {
       <div className="searchInputs">
         <input type="text" placeholder={placeholder} />
 
-        <div className="searchIcon">
-          <SearchIcon />
+        <div className="searchButton">
+          {/* <SearchIcon /> */}
           <button onClick={() => setWord("skyscraper")}>Search</button>
         </div>
       </div>
     </div>
   );
 }
+
 
 export default SearchBar;

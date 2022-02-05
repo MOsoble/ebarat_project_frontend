@@ -1,14 +1,13 @@
 import React from "react";
 
-function RelatedWords() {
+function RelatedWords(currentWord) {
   const RelatedWordData = {
     Car: ["Ford", "BMW", "Fiat", "Toyota", "Honda"],
     Couch: ["Chair", "Furniture", "Bed"],
     Mariama: ["Hana", "Sabrina", "Yasmine"],
+    skyscraper: ["Burj", "tall", "tower"],
   };
-
-  for (let word in RelatedWordData) {
-    return RelatedWordData[word] + " ";
-  }
+  return 1 + 1;
 }
+
 export default RelatedWords;
