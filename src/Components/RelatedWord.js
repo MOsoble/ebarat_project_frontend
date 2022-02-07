@@ -1,9 +1,7 @@
 import React from "react";
 
 function RelatedWords(currentWord) {
-  <div class="lds-circle">
-    <div></div>
-  </div>;
+
   const RelatedWordData = {
     Car: ["Ford", "BMW", "Fiat", "Toyota", "Honda"],
     Couch: ["Chair", "Furniture", "Bed"],
