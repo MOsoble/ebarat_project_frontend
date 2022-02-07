@@ -35,6 +35,12 @@ function App() {
             <h5>Words related to {searchedWord}</h5>
             {/* for word in related words: put a button */}
             <RelatedWords currentWord={searchedWord} />
+            <div class="lds-ellipsis">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
           </div>
         </div>
       </main>
