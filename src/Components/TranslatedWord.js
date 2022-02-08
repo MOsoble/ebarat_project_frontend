@@ -1,6 +1,6 @@
 import React from "react";
 
-function TranslatedWord({ searchTerm, translateWord }) {
+function TranslatedWord({ searchTerm}) {
   // const RelatedWordData = {
   //   Car: ["Ford", "BMW", "Fiat", "Toyota", "Honda"],
   //   Couch: ["Chair", "Furniture", "Bed"],
