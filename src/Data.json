@@ -1,19 +1,13 @@
-{
-    "Car":[
-       "Ford",
-       "BMW",
-       "Fiat",
-       "Toyota",
-       "Honda"
-    ],
-    "Couch":[
-       "Chair",
-       "Furniture",
-       "Bed"
-    ],
-    "Mariama":[
-       "Hana",
-       "Sabrina",
-       "Yasmine"
-    ]
- }
+[{"word":"word",
+   "translation": "كلمة ",
+"similarWords":["some", "similar", "words"]},
+{"word":"second word",
+   "translation": "second arabic word",
+"similarWords":["2some", "2similar", "2words"]},
+
+{"word":"third word",
+   "translation": "third arabic word",
+"similarWords":["3some", "3similar", "3words"]},
+{"word":"fourth word",
+   "translation": "somfourthe arabic word",
+"similarWords":["4some", "4similar", "4words"]}]

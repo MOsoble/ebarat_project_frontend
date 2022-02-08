@@ -3,12 +3,6 @@
 import React, { useState, useEffect } from "react";
 
 function SearchBar({ searchTerm, handleSearchClick }) {
-  // const [inputChange, setInputChange] = useState(searchTerm);
-  // const handleInputChange = (event) => {
-  //   setInputChange(event.target.value);
-  //   console.log(inputChange);
-  // };[]
-
   const [searchValue, setSearchValue] = useState("");
   // this is state that is only local to this component
 

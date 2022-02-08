@@ -10,7 +10,6 @@ function App() {
   const handleSearchClick = (newValue) => {
     setSearchedTerm(newValue);
   };
-
   return (
     <div className="container">
       <header className="title">
@@ -32,19 +31,18 @@ function App() {
               handleSearchClick={handleSearchClick}
             />
             {/* <ArrowCircleRightIcon /> */}
-            <TranslatedWord searchTerm={searchTerm} />
           </div>
           <div className="related-words-area">
-            <h5>Words related to {searchTerm}</h5>
+            <TranslatedWord searchTerm={searchTerm} />
             {/* for word in related words: put a button */}
             <RelatedWords searchTerm={searchTerm} />
 
-            <div class="lds-ellipsis">
+            {/* <div class="lds-ellipsis">
               <div></div>
               <div></div>
               <div></div>
               <div></div>
-            </div>
+            </div> */}
           </div>
         </div>
       </main>
