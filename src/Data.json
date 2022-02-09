@@ -1,13 +1,16 @@
 [{"word":"word",
    "translation": "كلمة ",
 "similarWords":["some", "similar", "words"]},
-{"word":"second word",
-   "translation": "second arabic word",
-"similarWords":["2some", "2similar", "2words"]},
-
-{"word":"third word",
-   "translation": "third arabic word",
-"similarWords":["3some", "3similar", "3words"]},
-{"word":"fourth word",
-   "translation": "somfourthe arabic word",
-"similarWords":["4some", "4similar", "4words"]}]
+{"word":"wednesday",
+   "translation": "الأَربِعاء",
+"similarWords":["لخَميس"
+,"الجُمعة", "السَّبت"]},
+{"word":"joke",
+   "translation": "نكتة ",
+"similarWords":["مزحة", 
+   "أضحوكة", 
+   "words"]},
+{"word":"cat",
+   "translation": "قط",
+"similarWords":["كلب",
+   "حيوان"]}]

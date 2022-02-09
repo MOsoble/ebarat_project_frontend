@@ -1,7 +1,7 @@
 import "./App.css";
 import SearchBar from "./Components/SearchBar.js";
 // import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
-import RelatedWords from "./Components/RelatedWord.js";
+// import RelatedWords from "./Components/RelatedWord.js";
 import TranslatedWord from "./Components/TranslatedWord.js";
 import { useState } from "react";
 
@@ -35,7 +35,7 @@ function App() {
           <div className="related-words-area">
             <TranslatedWord searchTerm={searchTerm} />
             {/* for word in related words: put a button */}
-            <RelatedWords searchTerm={searchTerm} />
+            {/* <RelatedWords searchTerm={searchTerm} /> */}
 
             {/* <div class="lds-ellipsis">
               <div></div>
