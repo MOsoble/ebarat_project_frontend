@@ -1,0 +1,9 @@
+ol {
+    list-style: none;
+}
+li {
+    border-radius: 15px;
+    padding: 20px;
+    justify-content:space-evenly;
+    background-color: rgb(0, 204, 255);
+}

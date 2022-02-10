@@ -1,8 +1,6 @@
 import "./App.css";
 import SearchBar from "./Components/SearchBar.js";
-// import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
-// import RelatedWords from "./Components/RelatedWord.js";
-import TranslatedWord from "./Components/TranslatedWord.js";
+import TranslatedRelatedWords from "./Components/TranslatedRelatedWords.js";
 import { useState } from "react";
 
 function App() {
@@ -20,8 +18,14 @@ function App() {
       <main className="main">
         <div className="sidebar">
           <h5>
-            Ebarat is a webapp for translating words from English to Arabic and
-            then finding some related words in Arabic
+            Ebarat is a tool that can be used for translating words from English
+            to Arabic and then finding words or phrases in Arabic that are
+            similar or related to the searched term.
+          </h5>
+          <h5>
+            This app is not only for Standard or Classical Arabic al-ʻArabīyah
+            al-Fuṣḥā (العربية الفصحى) but may show Arabic words used colloqually
+            in a variety of different dialects.{" "}
           </h5>
         </div>
         <div className="main-main">
@@ -33,9 +37,8 @@ function App() {
             {/* <ArrowCircleRightIcon /> */}
           </div>
           <div className="related-words-area">
-            <TranslatedWord searchTerm={searchTerm} />
+            <TranslatedRelatedWords searchTerm={searchTerm} />
             {/* for word in related words: put a button */}
-            {/* <RelatedWords searchTerm={searchTerm} /> */}
 
             {/* <div class="lds-ellipsis">
               <div></div>
@@ -50,20 +53,5 @@ function App() {
     </div>
   );
 }
-
-/* 
-App 
-  div
-    header
-    div
-      searchbar
-      translatedword (word)
-      ...
-      ..
-
-        searchbar
-
-        store
-*/
 
 export default App;
