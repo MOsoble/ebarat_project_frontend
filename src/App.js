@@ -38,6 +38,7 @@ function App() {
           </div>
           <div className="related-words-area">
             <TranslatedRelatedWords searchTerm={searchTerm} />
+            
             {/* for word in related words: put a button */}
 
             {/* <div class="lds-ellipsis">
