@@ -44,14 +44,16 @@ function TranslatedRelatedWords({ searchTerm }) {
   }
 
   return (
-    <div>
-      <div>{"Translation of "}</div>
-      <div>{searchTerm}</div>
-      <div>{" is "}</div>
-      <div>{translation}</div>
-      <div>{" and some related words are "}</div>
-      <div>{SimpleWordcloud()}</div>
-      <div>{reverse_word_items()}</div>
+    <div className="related-words-area">
+      <div className="translation-area">
+        <div>{"Translation of "}</div>
+        <div className="english-word">{searchTerm}</div>
+        <div>{" is "}</div>
+        <div className="arabic-word">{translation}</div>
+        <h2 className="related-heading">{" Related Terms "}</h2>
+      </div>
+      <div className="word_cloud">{SimpleWordcloud()}</div>
+      <div className="related_words">{reverse_word_items()}</div>
     </div>
   );
 }
