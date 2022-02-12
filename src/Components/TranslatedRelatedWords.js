@@ -4,16 +4,26 @@ import "./TranslatedRelatedWords.css";
 import ReactWordcloud from "react-wordcloud";
 import "tippy.js/dist/tippy.css";
 import "tippy.js/animations/scale.css";
+import Axios from "axios";
 
 function TranslatedRelatedWords({ searchTerm }) {
   let translation = "";
   let related_words = "";
+  Axios.get("localhost:5000/related", {
+    params: {
+      word: { searchTerm },
+    },
+  }).then(function (response) {
+    translation = response["translated_word"];
+    related_words = response["related_words"];
+  });
 
-  const word = JSONDATA["word"];
-  if (word === searchTerm) {
-    translation = JSONDATA["translated_word"];
-    related_words = JSONDATA["related_words"];
-  }
+  // const word = JSONDATA["word"];
+  // if (word === searchTerm) {
+  //   translation = JSONDATA["translated_word"];
+  //   related_words = JSONDATA["related_words"];
+  // }
+
   function reverseString(str) {
     var splitString = str.split("");
     var reverseArray = splitString.reverse();
