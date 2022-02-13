@@ -1,5 +1,5 @@
-import JSONDATA from "/Users/mariamaosoble/ada/Ebarat_Project_Frontend/ebarat_project_frontend/src/related.json";
-import React, { useState, useEffect } from "react";
+// import JSONDATA from "/Users/mariamaosoble/ada/Ebarat_Project_Frontend/ebarat_project_frontend/src/related.json";
+import React, { useState, useEffect, setState, state } from "react";
 import "./TranslatedRelatedWords.css";
 import ReactWordcloud from "react-wordcloud";
 import "tippy.js/dist/tippy.css";
@@ -9,14 +9,46 @@ import Axios from "axios";
 function TranslatedRelatedWords({ searchTerm }) {
   let translation = "";
   let related_words = "";
-  Axios.get("localhost:5000/related", {
-    params: {
-      word: { searchTerm },
-    },
-  }).then(function (response) {
-    translation = response["translated_word"];
-    related_words = response["related_words"];
-  });
+  let word = searchTerm;
+  //////
+  // const getData = async () => {
+  //   await Axios.get("http://localhost:5000/related", {
+  //     headers: {
+  //       "Access-Control-Allow-Origin": "http://localhost:5000",
+  //     },
+  //     params: { word },
+  //   }).then((response) => {
+  //     translation = response.data.translated_word;
+  //     related_words = response.data.related_words;
+  //     console.log("first console log");
+  //     console.log(translation);
+  //   });
+  /////////
+  //   getData.setState({ translation });
+  // };
+  // getData();
+
+  // Axios.get("http://localhost:5000/related", {
+  //   headers: {
+  //     "Access-Control-Allow-Origin": "http://localhost:5000",
+  //   },
+  //   params: { word },
+  // }).then((response) => {
+  //   translation = response.data.translated_word;
+  //   related_words = response.data.related_words;
+  //   console.log("first console log");
+  //   console.log(translation);
+  // });
+  console.log("second console log");
+  console.log(translation);
+
+  // Axios.get("localhost:5000/related", {
+  //   params: {
+  //     word: { searchTerm },
+  //   },
+  // }).then(function (response) {
+  //
+  // });
 
   // const word = JSONDATA["word"];
   // if (word === searchTerm) {
@@ -52,7 +84,6 @@ function TranslatedRelatedWords({ searchTerm }) {
 
     return <ol>{wordsList}</ol>;
   }
-
   return (
     <div className="related-words-area">
       <div className="translation-area">
