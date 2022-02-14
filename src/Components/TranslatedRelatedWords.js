@@ -7,8 +7,8 @@ import "tippy.js/animations/scale.css";
 import Axios from "axios";
 
 function TranslatedRelatedWords({ searchTerm }) {
-  let translation = "";
-  let related_words = "";
+  var translation = "";
+  var related_words = "";
   let word = searchTerm;
   //////
   // const getData = async () => {
@@ -24,32 +24,48 @@ function TranslatedRelatedWords({ searchTerm }) {
   //     console.log(translation);
   //   });
   /////////
+  // fetch("localhost:5000/related", {
+  //   params: {
+  //     word: { searchTerm },
+  //   },
+  // })
+  //   .then((response) => {
+  //     translation = response.data.translated_word;
+  //     related_words = response.data.related_words;
+  //     console.log("first console log");
+  //     console.log(translation);
+  //   })
+  //   .then((data) => console.log(data));
   //   getData.setState({ translation });
   // };
   // getData();
 
-  // Axios.get("http://localhost:5000/related", {
-  //   headers: {
-  //     "Access-Control-Allow-Origin": "http://localhost:5000",
-  //   },
-  //   params: { word },
-  // }).then((response) => {
-  //   translation = response.data.translated_word;
-  //   related_words = response.data.related_words;
-  //   console.log("first console log");
-  //   console.log(translation);
-  // });
-  console.log("second console log");
+  let getData = (callback) => {
+    Axios.get("http://localhost:5000/related", {
+      headers: {
+        "Access-Control-Allow-Origin": "http://localhost:5000",
+      },
+      params: { word },
+    })
+      .then((response) => {
+        callback(response.data.translated_word);
+        // translation = response.data.translated_word;
+        callback(response.data.related_words);
+        // console.log("first console log");
+        // console.log(translation);
+      })
+      .then(console.log(translation));
+  };
+
+  getData(function (response) {
+    if (typeof response === "string") {
+      translation = response;
+    } else {
+      related_words = response;
+    }
+  });
   console.log(translation);
-
-  // Axios.get("localhost:5000/related", {
-  //   params: {
-  //     word: { searchTerm },
-  //   },
-  // }).then(function (response) {
-  //
-  // });
-
+  console.log(related_words);
   // const word = JSONDATA["word"];
   // if (word === searchTerm) {
   //   translation = JSONDATA["translated_word"];
