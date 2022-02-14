@@ -1,10 +1,7 @@
-// import SearchIcon from "@mui/icons-material/Search";
+import React, { useState } from "react";
 
-import React, { useState, useEffect } from "react";
-
-function SearchBar({ searchTerm, handleSearchClick }) {
+function SearchBar({ handleSearchClick }) {
   const [searchValue, setSearchValue] = useState("");
-  // this is state that is only local to this component
 
   return (
     <div className="search">
@@ -17,7 +14,6 @@ function SearchBar({ searchTerm, handleSearchClick }) {
         />
 
         <div className="translateButton">
-          {/* <SearchIcon /> */}
           <button onClick={() => handleSearchClick(searchValue)}>
             {" "}
             Search{" "}
