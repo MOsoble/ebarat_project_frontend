@@ -58,7 +58,7 @@ body {
   padding: 20px;
 }
  .footer {
-  display: flex;
+  
   background-color: #dbdfee;
   width:100%;
   min-height: 100px;
@@ -68,6 +68,7 @@ body {
   list-style: none;
   margin: 0 auto;
   text-align: center;
+  padding: 15px;
   
  }  
 .related-words-area {

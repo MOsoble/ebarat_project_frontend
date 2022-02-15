@@ -8,7 +8,7 @@ function SearchBar({ handleSearchClick }) {
       <div className="searchInputs">
         <input
           type="text"
-          placeholder="Search Term Here..."
+          placeholder="Search Here..."
           value={searchValue}
           onChange={(e) => setSearchValue(e.target.value)}
         />

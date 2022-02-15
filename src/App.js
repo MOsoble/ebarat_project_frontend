@@ -25,9 +25,11 @@ function App() {
               are similar or related to the searched term.
             </h5>
             <h5>
-              This app is not only for Standard or Classical Arabic al-ʻArabīyah
-              al-Fuṣḥā (العربية الفصحى) but may show Arabic words used
-              colloqually in a variety of different dialects.{" "}
+              This app can be used to find similar or related words both in
+              Standard/Classical Arabic (al-ʻArabīyah al-Fuṣḥā العربية الفصحى)
+              as well as colloquial Arabic in a variety of different dialects.
+              Although the "Translation" will usually be in standard Arabic, the
+              "related words" are likely to vary.{" "}
             </h5>
           </div>
 
@@ -45,9 +47,18 @@ function App() {
           </div>
         </main>
         <footer className="footer">
-          This project runs using AraVec, a pre-trained distributed word
-          representation (word embedding) open source project, along with the
-          Google Translate API.
+          <div>
+            {" "}
+            This project runs using AraVec, a pre-trained distributed word
+            representation (word embedding) open source project, along with the
+            Google Translate API.{" "}
+          </div>
+
+          <div>
+            {" "}
+            If you have any feedback about our site, please contact us at
+            info@ebarat.com
+          </div>
         </footer>
       </div>
     );
@@ -67,9 +78,11 @@ function App() {
             similar or related to the searched term.
           </h5>
           <h5>
-            This app is not only for Standard or Classical Arabic al-ʻArabīyah
-            al-Fuṣḥā (العربية الفصحى) but may show Arabic words used colloqually
-            in a variety of different dialects.{" "}
+            This app can be used to find similar or related words both in
+            Standard/Classical Arabic (al-ʻArabīyah al-Fuṣḥā العربية الفصحى) as
+            well as colloquial Arabic in a variety of different dialects.
+            Although the "Translation" will usually be in standard Arabic, the
+            "related words" are likely to vary.{" "}
           </h5>
         </div>
         <div className="main-main">
@@ -83,9 +96,18 @@ function App() {
         </div>
       </main>
       <footer className="footer">
-        This project runs using AraVec, a pre-trained distributed word
-        representation (word embedding) open source project, along with the
-        Google Translate API.
+        <div>
+          {" "}
+          This project runs using AraVec, a pre-trained distributed word
+          representation (word embedding) open source project, along with the
+          Google Translate API.{" "}
+        </div>
+
+        <div>
+          {" "}
+          If you have any feedback about our site, please contact us at
+          info@ebarat.com
+        </div>
       </footer>
     </div>
   );
